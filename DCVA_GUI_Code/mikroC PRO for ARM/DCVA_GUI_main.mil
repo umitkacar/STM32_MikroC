@@ -1,0 +1,15 @@
+_main:
+  begin   (midx: 0)
+//DCVA_GUI_main.c,22 :: 		void main() {
+_main:
+  begin   (midx: 0)
+//DCVA_GUI_main.c,24 :: 		Start_TP();
+	CALL _Start_TP   (midx: 0)
+//DCVA_GUI_main.c,26 :: 		while (1) {
+0:   (midx: 0)
+//DCVA_GUI_main.c,27 :: 		Check_TP();
+	CALL _Check_TP   (midx: 0)
+//DCVA_GUI_main.c,29 :: 		}
+	goto	0   (midx: 0)
+  end
+   (midx: 0)

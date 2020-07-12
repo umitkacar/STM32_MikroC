@@ -1,0 +1,84 @@
+[DEVICE]
+Name=STM32F407VG
+Clock=140000000
+[MEMORY_MODEL]
+Value=0
+[BUILD_TYPE]
+Value=0
+[ACTIVE_TAB]
+Value=DCVA_GUI_events_code.c
+[USE_EEPROM]
+Value=0
+[EEPROM_DEFINITION]
+Value=
+[USE_HEAP]
+Value=0
+[HEAP_SIZE]
+Value=2000
+[FILES]
+Count=4
+File0=DCVA_GUI_main.c
+File1=DCVA_GUI_events_code.c
+File2=DCVA_GUI_driver.c
+File3=DCVA_GUI_resources.c
+[BINARIES]
+Count=0
+[IMAGES]
+Count=0
+ActiveImageIndex=-1
+[OPENED_FILES]
+Count=3
+File0=DCVA_GUI_main.c
+File1=DCVA_GUI_events_code.c
+File2=DCVA_GUI_driver.c
+[EEPROM]
+Count=0
+[ACTIVE_COMMENTS_FILES]
+Count=0
+[OTHER_FILES]
+Count=0
+[SEARCH_PATH]
+Count=4
+Path0=C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for ARM\defs\
+Path1=D:\ÝTÜ\MikroC TEZ\DCVA_GUI_LAST_TEZ\DCVA_GUI_LAST\DCVA_GUI_Code\mikroC PRO for ARM\
+Path2=C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for ARM\Examples\STM32\Development Systems\mikromedia for STM32 M4\DCVA_GUI_Code\mikroC PRO for ARM\
+Path3=C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for ARM\Uses\ST M4\
+[HEADER_PATH]
+Count=3
+Path0=C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for ARM\Examples\STM32\Development Systems\mikromedia for STM32 M4\DCVA_GUI_Code\mikroC PRO for ARM\
+Path1=C:\Users\toshýba\Desktop\umit\DCVA EXAMPLE 192Kbyte\DCVA_Code\mikroC PRO for ARM\
+Path2=D:\ÝTÜ\MikroC TEZ\DCVA_GUI_LAST_TEZ\DCVA_GUI_LAST\DCVA_GUI_Code\mikroC PRO for ARM\
+[HEADERS]
+Count=3
+File0=DCVA_GUI_objects.h
+File1=DCVA_GUI_resources.h
+File2=Ear_database.h
+[PLDS]
+Count=0
+[Useses]
+Count=16
+File0=C_String
+File1=TFT
+File2=TFT_Fonts
+File3=ADC
+File4=TFT_TouchPanel
+File5=Mmc
+File6=Mmc_FAT16
+File7=Mmc_FAT16_Config
+File8=Mmc_FAT16_Defs
+File9=Spi
+File10=C_Type
+File11=Conversions
+File12=TFT_Defs
+File13=C_Math
+File14=C_Stdlib
+File15=SDIO
+[EXPANDED NODES]
+Node1=Sources
+Node2=Header Files
+Node3=Output Files
+Count=3
+[PROGRAMMER_OPTIONS]
+Value=SWD
+[PROGRAMMER_TYPE]
+Value=mE
