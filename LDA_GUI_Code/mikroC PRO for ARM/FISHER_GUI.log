@@ -1,0 +1,46 @@
+0	1	mikroCARM.exe -MSF -DBG -pSTM32F407VG -UICD -RA -LHF -DL -SSA -O11111114 -fo168 -N"X:\ÝTÜ\MikroC TEZ\FISHER_GUI_Code_hepsiii\FISHER_GUI_Code\mikroC PRO for ARM\FISHER_GUI.mcpar" -SP"C:\Program Files\Mikroelektronika\mikroC PRO for ARM\defs\" -SP"X:\ÝTÜ\MikroC TEZ\FISHER_GUI_Code_hepsiii\FISHER_GUI_Code\mikroC PRO for ARM\" -SP"X:\ÝTÜ\MikroC TEZ\FISHER_GUI_Code_tek\FISHER_GUI_Code\mikroC PRO for ARM\" -SP"C:\Program Files\Mikroelektronika\mikroC PRO for ARM\Uses\ST M4\" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for ARM\defs\" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for ARM\Examples\STM32\FISHER_GUI_Code\mikroC PRO for ARM\" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for ARM\Uses\ST M4\" -SP"C:\Users\toshýba\Desktop\umit\FISHER_GUI_Code\mikroC PRO for ARM\" -IP"C:\Users\toshýba\Desktop\umit\FISHER_GUI_Code\mikroC PRO for ARM\" -IP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for ARM\Examples\STM32\FISHER_GUI_Code\mikroC PRO for ARM\" -IP"X:\ÝTÜ\MikroC TEZ\FISHER_GUI_Code_tek\FISHER_GUI_Code\mikroC PRO for ARM\" -IP"X:\ÝTÜ\MikroC TEZ\FISHER_GUI_Code_hepsiii\FISHER_GUI_Code\mikroC PRO for ARM\" "FISHER_GUI_main.c" "__Lib_Math.emcl" "__Lib_MathDouble.emcl" "__Lib_Delays.emcl" "__Lib_System_4XX.emcl" "__Lib_GPIO_32F4xx.emcl" "__Lib_CType.emcl" "__Lib_CString.emcl" "__Lib_CStdlib.emcl" "__Lib_CMath.emcl" "__Lib_Conversions.emcl" "__Lib_Trigonometry.emcl" "__Lib_ADC_123_32F20x_16ch.emcl" "__Lib_SPI_123.emcl" "__Lib_UART_123_45_6.emcl" "__Lib_Mmc.emcl" "__Lib_MmcFat16.emcl" "__Lib_MmcFat16Constants.emcl" "__Lib_TFT.emcl" "__Lib_TouchPanel_TFT.emcl" "__Lib_TouchPanel.emcl"	 
+warning: 0	1501	Specified search path does not exist: 'X:\ÝTÜ\MikroC TEZ\FISHER_GUI_Code_tek\FISHER_GUI_Code\mikroC PRO for ARM'	 
+warning: 0	1501	Specified search path does not exist: 'C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for ARM\defs'	 
+warning: 0	1501	Specified search path does not exist: 'C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for ARM\Examples\STM32\FISHER_GUI_Code\mikroC PRO for ARM'	 
+warning: 0	1501	Specified search path does not exist: 'C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for ARM\Uses\ST M4'	 
+warning: 0	1501	Specified search path does not exist: 'C:\Users\toshýba\Desktop\umit\FISHER_GUI_Code\mikroC PRO for ARM'	 
+warning: 0	1502	Specified include path does not exist: 'C:\Users\toshýba\Desktop\umit\FISHER_GUI_Code\mikroC PRO for ARM'	 
+warning: 0	1502	Specified include path does not exist: 'C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for ARM\Examples\STM32\FISHER_GUI_Code\mikroC PRO for ARM'	 
+warning: 0	1502	Specified include path does not exist: 'X:\ÝTÜ\MikroC TEZ\FISHER_GUI_Code_tek\FISHER_GUI_Code\mikroC PRO for ARM'	 
+diagnostics: 0	122	Compilation Started	STM32F407VG.c
+diagnostics: 50273	123	Compiled Successfully	STM32F407VG.c
+diagnostics: 0	122	Compilation Started	__Lib_Delays.c
+diagnostics: 115	123	Compiled Successfully	__Lib_Delays.c
+hint: 84	1164	Variable 'NumberOfCyc' has been eliminated by optimizer	__Lib_Delays.c
+hint: 101	1164	Variable 'NumberOfCyc' has been eliminated by optimizer	__Lib_Delays.c
+diagnostics: 0	122	Compilation Started	__lib_mmcfat16.h
+diagnostics: 71	123	Compiled Successfully	__Lib_MmcFat16Constants.c
+diagnostics: 0	126	All files Preprocessed in 500 ms	 
+diagnostics: 0	122	Compilation Started	fisher_gui_objects.h
+warning: 319	1508	Implicit conversion of int to ptr	hepsi.h
+warning: 339	1508	Implicit conversion of int to ptr	hepsi.h
+warning: 367	1508	Implicit conversion of int to ptr	hepsi.h
+warning: 395	1508	Implicit conversion of int to ptr	hepsi.h
+warning: 424	1508	Implicit conversion of int to ptr	hepsi.h
+warning: 453	1508	Implicit conversion of int to ptr	hepsi.h
+warning: 482	1508	Implicit conversion of int to ptr	hepsi.h
+warning: 511	1508	Implicit conversion of int to ptr	hepsi.h
+warning: 538	1508	Implicit conversion of int to ptr	hepsi.h
+warning: 564	1508	Implicit conversion of int to ptr	hepsi.h
+warning: 580	1508	Implicit conversion of int to ptr	hepsi.h
+warning: 596	1508	Implicit conversion of int to ptr	hepsi.h
+warning: 611	1508	Implicit conversion of int to ptr	hepsi.h
+warning: 628	1508	Implicit conversion of int to ptr	hepsi.h
+warning: 644	1508	Implicit conversion of int to ptr	hepsi.h
+warning: 704	1506	Implicit conversion of pointer to int	hepsi.h
+warning: 717	1506	Implicit conversion of pointer to int	hepsi.h
+warning: 724	1506	Implicit conversion of pointer to int	hepsi.h
+warning: 745	1506	Implicit conversion of pointer to int	hepsi.h
+warning: 761	1506	Implicit conversion of pointer to int	hepsi.h
+warning: 840	1506	Implicit conversion of pointer to int	hepsi.h
+warning: 911	1506	Implicit conversion of pointer to int	hepsi.h
+hint: 930	1163	Variable 'save_bled_direction' has been declared, but not used	hepsi.h
+diagnostics: 38	123	Compiled Successfully	FISHER_GUI_main.c
+diagnostics: 0	127	All files Compiled in 41000 ms	 
+error: 8	362	Not enough RAM 'V'	FISHER_GUI_main.c
+error: 0	102	Finished (with errors): 04 Þub 2013, 10:27:06	FISHER_GUI.mcpar
