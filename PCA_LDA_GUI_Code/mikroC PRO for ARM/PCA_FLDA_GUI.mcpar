@@ -1,0 +1,92 @@
+[DEVICE]
+Name=STM32F407VG
+Clock=140000000
+[MEMORY_MODEL]
+Value=0
+[BUILD_TYPE]
+Value=1
+[ACTIVE_TAB]
+Value=PCA_FLDA_GUI_events_code.c
+[USE_EEPROM]
+Value=0
+[EEPROM_DEFINITION]
+Value=
+[USE_HEAP]
+Value=0
+[HEAP_SIZE]
+Value=2000
+[FILES]
+Count=5
+File0=PCA_FLDA_GUI_main.c
+File1=PCA_FLDA_GUI_events_code.c
+File2=PCA_FLDA_GUI_driver.c
+File3=PCA_FLDA_GUI_resources.c
+File4=PCA_FLDA_GUI_ear.c
+[BINARIES]
+Count=0
+[IMAGES]
+Count=0
+ActiveImageIndex=-1
+[OPENED_FILES]
+Count=7
+File0=PCA_FLDA_GUI_main.c
+File1=PCA_FLDA_GUI_events_code.c
+File2=PCA_FLDA_GUI_ear.c
+File3=PCA_FLDA_GUI_resources.c
+File4=PCA_FLDA_GUI_driver.c
+File5=PCA_FLDA_GUI_objects.h
+File6=PCA_FLDA_GUI_resources.h
+[EEPROM]
+Count=0
+[ACTIVE_COMMENTS_FILES]
+Count=0
+[OTHER_FILES]
+Count=0
+[SEARCH_PATH]
+Count=7
+Path0=C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for ARM\defs\
+Path1=D:\ÝTÜ\MikroC TEZ\MAKALE_GUI\PCA_FLDA_GUI_Code\mikroC PRO for ARM\
+Path2=C:\Program Files\Mikroelektronika\mikroC PRO for ARM\defs\
+Path3=X:\ÝTÜ\MikroC TEZ\MAKALE_GUI\PCA_FLDA_GUI_Code\mikroC PRO for ARM\
+Path4=C:\Program Files\Mikroelektronika\mikroC PRO for ARM\Uses\ST M4\
+Path5=C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for ARM\Examples\STM32\MAKALE_GUI\PCA_FLDA_GUI_Code\mikroC PRO for ARM\
+Path6=C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for ARM\Uses\ST M4\
+[HEADER_PATH]
+Count=3
+Path0=C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for ARM\Examples\STM32\MAKALE_GUI\PCA_FLDA_GUI_Code\mikroC PRO for ARM\
+Path1=X:\ÝTÜ\MikroC TEZ\MAKALE_GUI\PCA_FLDA_GUI_Code\mikroC PRO for ARM\
+Path2=D:\ÝTÜ\MikroC TEZ\MAKALE_GUI\PCA_FLDA_GUI_Code\mikroC PRO for ARM\
+[HEADERS]
+Count=2
+File0=PCA_FLDA_GUI_objects.h
+File1=PCA_FLDA_GUI_resources.h
+[PLDS]
+Count=0
+[Useses]
+Count=17
+File0=SDIO
+File1=TFT_Defs
+File2=UART
+File3=C_Stdlib
+File4=C_Math
+File5=C_String
+File6=TFT
+File7=TFT_Fonts
+File8=ADC
+File9=TFT_TouchPanel
+File10=Mmc
+File11=Mmc_FAT16
+File12=Mmc_FAT16_Config
+File13=Mmc_FAT16_Defs
+File14=Spi
+File15=C_Type
+File16=Conversions
+[EXPANDED NODES]
+Node1=Sources
+Node2=Header Files
+Node3=Output Files
+Count=3
+[PROGRAMMER_OPTIONS]
+Value=SWD
+[PROGRAMMER_TYPE]
+Value=mE

@@ -1,0 +1,17 @@
+#line 1 "X:/ÝTÜ/MikroC TEZ/MAKALE_GUI/PCA_FLDA_GUI_Code/mikroC PRO for ARM/PCA_FLDA_GUI_resources.c"
+const unsigned long Arial13x16_Regular = 0x00000212;
+const unsigned long Arial13x16_Bold = 0x00000A6A;
+const unsigned long Arial19x22_Regular = 0x000012D2;
+const unsigned long Arial23x29_Bold = 0x0000225C;
+const unsigned long Arial30x33_Regular = 0x0000380E;
+const unsigned long Arial32x36_Regular = 0x000053A0;
+const unsigned long Tahoma12x16_Regular = 0x000074CC;
+const unsigned long Tahoma14x16_Bold = 0x00007CC4;
+const unsigned long Tahoma16x19_Regular = 0x0000852C;
+const unsigned long Tahoma19x19_Bold = 0x00008FE8;
+const unsigned long Tahoma19x23_Regular = 0x00009D2A;
+const unsigned long Tahoma23x23_Bold = 0x0000ACFB;
+const unsigned long Tahoma21x25_Regular = 0x0000BDF7;
+const unsigned long Tahoma23x29_Regular = 0x0000D000;
+const unsigned long Tahoma28x35_Regular = 0x0000E595;
+const unsigned long Tahoma11x13_Regular = 0x000103B0;

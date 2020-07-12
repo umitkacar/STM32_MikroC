@@ -1,0 +1,16 @@
+#define Arial13x16_Regular  0x00000212
+#define Arial13x16_Bold     0x00000A6A
+#define Arial19x22_Regular  0x000012D2
+#define Arial23x29_Bold     0x0000225C
+#define Arial30x33_Regular  0x0000380E
+#define Arial32x36_Regular  0x000053A0
+#define Tahoma12x16_Regular 0x000074CC
+#define Tahoma14x16_Bold    0x00007CC4
+#define Tahoma16x19_Regular 0x0000852C
+#define Tahoma19x19_Bold    0x00008FE8
+#define Tahoma19x23_Regular 0x00009D2A
+#define Tahoma23x23_Bold    0x0000ACFB
+#define Tahoma21x25_Regular 0x0000BDF7
+#define Tahoma23x29_Regular 0x0000D000
+#define Tahoma28x35_Regular 0x0000E595
+#define Tahoma11x13_Regular 0x000103B0

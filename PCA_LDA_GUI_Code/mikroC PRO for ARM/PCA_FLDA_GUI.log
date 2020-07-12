@@ -1,0 +1,114 @@
+0	1	mikroCARM.exe -MSF -DBG -pSTM32F407VG -UICD -RA -LHF -DL -SSA -O11111114 -fo168 -N"X:\ÝTÜ\MikroC TEZ\MAKALE_GUI\PCA_FLDA_GUI_Code\mikroC PRO for ARM\PCA_FLDA_GUI.mcpar" -SP"C:\Program Files\Mikroelektronika\mikroC PRO for ARM\defs\" -SP"X:\ÝTÜ\MikroC TEZ\MAKALE_GUI\PCA_FLDA_GUI_Code\mikroC PRO for ARM\" -SP"C:\Program Files\Mikroelektronika\mikroC PRO for ARM\Uses\ST M4\" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for ARM\defs\" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for ARM\Examples\STM32\MAKALE_GUI\PCA_FLDA_GUI_Code\mikroC PRO for ARM\" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for ARM\Uses\ST M4\" -IP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for ARM\Examples\STM32\MAKALE_GUI\PCA_FLDA_GUI_Code\mikroC PRO for ARM\" -IP"X:\ÝTÜ\MikroC TEZ\MAKALE_GUI\PCA_FLDA_GUI_Code\mikroC PRO for ARM\" "PCA_FLDA_GUI_main.c" "PCA_FLDA_GUI_events_code.c" "PCA_FLDA_GUI_driver.c" "PCA_FLDA_GUI_resources.c" "PCA_FLDA_GUI_ear.c" "__Lib_Math.emcl" "__Lib_MathDouble.emcl" "__Lib_Delays.emcl" "__Lib_System_4XX.emcl" "__Lib_GPIO_32F4xx.emcl" "__Lib_CType.emcl" "__Lib_CString.emcl" "__Lib_CStdlib.emcl" "__Lib_CMath.emcl" "__Lib_Conversions.emcl" "__Lib_ADC_123_32F20x_16ch.emcl" "__Lib_SPI_123.emcl" "__Lib_UART_123_45_6.emcl" "__Lib_Mmc.emcl" "__Lib_MmcFat16.emcl" "__Lib_MmcFat16Constants.emcl" "__Lib_TFT.emcl" "__Lib_TFT_Defs.emcl" "__Lib_TouchPanel_TFT.emcl"	 
+warning: 0	1501	Specified search path does not exist: 'C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for ARM\defs'	 
+warning: 0	1501	Specified search path does not exist: 'C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for ARM\Examples\STM32\MAKALE_GUI\PCA_FLDA_GUI_Code\mikroC PRO for ARM'	 
+warning: 0	1501	Specified search path does not exist: 'C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for ARM\Uses\ST M4'	 
+warning: 0	1502	Specified include path does not exist: 'C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for ARM\Examples\STM32\MAKALE_GUI\PCA_FLDA_GUI_Code\mikroC PRO for ARM'	 
+diagnostics: 0	122	Compilation Started	STM32F407VG.c
+diagnostics: 57000	123	Compiled Successfully	STM32F407VG.c
+diagnostics: 0	122	Compilation Started	__Lib_Delays.c
+diagnostics: 115	123	Compiled Successfully	__Lib_Delays.c
+hint: 84	1164	Variable 'NumberOfCyc' has been eliminated by optimizer	__Lib_Delays.c
+hint: 101	1164	Variable 'NumberOfCyc' has been eliminated by optimizer	__Lib_Delays.c
+diagnostics: 0	122	Compilation Started	__Lib_MmcFat16Constants.c
+diagnostics: 73	123	Compiled Successfully	__Lib_MmcFat16Constants.c
+diagnostics: 0	122	Compilation Started	__Lib_TFT_Defs.c
+warning: 94	1508	Implicit conversion of int to ptr	__Lib_TFT_Defs.c
+warning: 106	1508	Implicit conversion of int to ptr	__Lib_TFT_Defs.c
+warning: 118	1508	Implicit conversion of int to ptr	__Lib_TFT_Defs.c
+warning: 130	1508	Implicit conversion of int to ptr	__Lib_TFT_Defs.c
+warning: 139	1508	Implicit conversion of int to ptr	__Lib_TFT_Defs.c
+warning: 156	1508	Implicit conversion of int to ptr	__Lib_TFT_Defs.c
+diagnostics: 2740	123	Compiled Successfully	__Lib_TFT_Defs.c
+hint: 44	1164	Variable 'temp' has been eliminated by optimizer	__Lib_TFT_Defs.c
+diagnostics: 0	122	Compilation Started	pca_flda_gui_objects.h
+diagnostics: 30	123	Compiled Successfully	PCA_FLDA_GUI_main.c
+diagnostics: 0	122	Compilation Started	pca_flda_gui_objects.h
+diagnostics: 972	123	Compiled Successfully	PCA_FLDA_GUI_events_code.c
+diagnostics: 0	122	Compilation Started	pca_flda_gui_objects.h
+warning: 799	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 815	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 831	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 847	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 866	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 893	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 921	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 945	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 965	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 993	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 1017	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 1033	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 1049	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 1070	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 1099	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 1128	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 1157	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 1186	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 1215	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 1244	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 1268	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 1284	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 1303	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 1326	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 1342	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 1362	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 1386	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 1405	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 1428	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 1447	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 1473	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 1489	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 1505	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 1521	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 1541	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 1565	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 1581	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 1597	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 1613	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 1629	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 1649	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 1673	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 1689	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 1705	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 1726	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 1755	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 1784	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 1813	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 1842	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 1871	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 1895	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 1911	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 1927	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 1946	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 1969	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 1985	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 2001	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 2017	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 2033	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 2052	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 2075	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 2091	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 2110	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 2136	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 2155	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 2178	1508	Implicit conversion of int to ptr	PCA_FLDA_GUI_driver.c
+warning: 2238	1506	Implicit conversion of pointer to int	PCA_FLDA_GUI_driver.c
+warning: 2251	1506	Implicit conversion of pointer to int	PCA_FLDA_GUI_driver.c
+warning: 2271	1506	Implicit conversion of pointer to int	PCA_FLDA_GUI_driver.c
+warning: 2299	1506	Implicit conversion of pointer to int	PCA_FLDA_GUI_driver.c
+warning: 2315	1506	Implicit conversion of pointer to int	PCA_FLDA_GUI_driver.c
+warning: 2394	1506	Implicit conversion of pointer to int	PCA_FLDA_GUI_driver.c
+warning: 2465	1506	Implicit conversion of pointer to int	PCA_FLDA_GUI_driver.c
+hint: 2484	1163	Variable 'save_bled_direction' has been declared, but not used	PCA_FLDA_GUI_driver.c
+diagnostics: 2926	123	Compiled Successfully	PCA_FLDA_GUI_driver.c
+diagnostics: 0	122	Compilation Started	PCA_FLDA_GUI_resources.c
+diagnostics: 16	123	Compiled Successfully	PCA_FLDA_GUI_resources.c
+diagnostics: 0	122	Compilation Started	PCA_FLDA_GUI_ear.c
+diagnostics: 45001	123	Compiled Successfully	PCA_FLDA_GUI_ear.c
+diagnostics: 0	127	All files Compiled in 19813 ms	 
+hint: 0	1144	Used RX: 16 (100%)   Free RX: 0 (0%)	Used RX: 16 (100%)   Free RX: 0 (0%)
+hint: 0	1144	Static RAM (bytes): 122363   Dynamic RAM (bytes): 8705	Static RAM (bytes): 122363   Dynamic RAM (bytes): 8705
+hint: 0	1144	Used ROM (bytes): 793814 (76%)  Free ROM (bytes): 254762 (24%)	Used ROM (bytes): 793814 (76%)  Free ROM (bytes): 254762 (24%)
+diagnostics: 0	125	Project Linked Successfully	PCA_FLDA_GUI.mcpar
+diagnostics: 0	128	Linked in 32469 ms	 
+diagnostics: 0	129	Project 'PCA_FLDA_GUI.mcpar' completed: 58406 ms	 
+diagnostics: 0	103	Finished successfully: 16 Þub 2013, 17:38:07	PCA_FLDA_GUI.mcpar
