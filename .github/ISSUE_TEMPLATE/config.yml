@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Discussion Forum
+    url: https://github.com/yourusername/STM32_MikroC/discussions
+    about: Ask questions and discuss ideas with the community
+  - name: 📚 Documentation
+    url: https://github.com/yourusername/STM32_MikroC/blob/main/README.md
+    about: Read the documentation and guides
+  - name: 🌟 Awesome Resources
+    url: https://github.com/yourusername/STM32_MikroC/blob/main/AWESOME_RESOURCES.md
+    about: Explore curated resources and trending projects
+  - name: 🤝 Contributing Guide
+    url: https://github.com/yourusername/STM32_MikroC/blob/main/CONTRIBUTING.md
+    about: Learn how to contribute to this project
