@@ -6,7 +6,6 @@ all test modules.
 
 import sys
 from pathlib import Path
-from typing import Generator
 
 import pytest
 
@@ -52,15 +51,12 @@ def test_data_dir(project_root: Path) -> Path:
 
 
 @pytest.fixture(autouse=True)
-def reset_test_state() -> Generator[None, None, None]:
+def reset_test_state() -> None:
     """Reset any global state before each test.
 
     This fixture runs automatically before each test to ensure clean state.
     """
-    # Setup
-    yield
-    # Teardown
-    pass
+    # Placeholder for any setup needed before each test
 
 
 @pytest.fixture

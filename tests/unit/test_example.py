@@ -67,7 +67,7 @@ class TestExceptionHandling:
 
     def test_value_error(self) -> None:
         """Test that invalid conversion raises ValueError."""
-        with pytest.raises(ValueError):
+        with pytest.raises(ValueError, match="invalid literal"):
             int("not a number")
 
 
