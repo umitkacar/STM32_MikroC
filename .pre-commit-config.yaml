@@ -1,0 +1,319 @@
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+
+default_install_hook_types: [pre-commit, commit-msg]
+default_stages: [commit]
+
+ci:
+  autofix_commit_msg: |
+    [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+    for more information, see https://pre-commit.ci
+  autofix_prs: true
+  autoupdate_branch: ''
+  autoupdate_commit_msg: '[pre-commit.ci] pre-commit autoupdate'
+  autoupdate_schedule: weekly
+  skip: []
+  submodules: false
+
+repos:
+  # ==================== Pre-commit hooks ====================
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      # Git checks
+      - id: check-added-large-files
+        args: [--maxkb=1000]
+      - id: check-case-conflict
+      - id: check-merge-conflict
+      - id: check-vcs-permalinks
+      - id: forbid-new-submodules
+      - id: no-commit-to-branch
+        args: [--branch, main, --branch, master]
+
+      # File checks
+      - id: check-ast
+      - id: check-builtin-literals
+      - id: check-byte-order-marker
+      - id: check-docstring-first
+      - id: check-executables-have-shebangs
+      - id: check-json
+      - id: check-shebang-scripts-are-executable
+      - id: check-symlinks
+      - id: check-toml
+      - id: check-xml
+      - id: check-yaml
+        args: [--allow-multiple-documents]
+
+      # Content checks
+      - id: debug-statements
+      - id: destroyed-symlinks
+      - id: detect-aws-credentials
+        args: [--allow-missing-credentials]
+      - id: detect-private-key
+      - id: end-of-file-fixer
+      - id: fix-byte-order-marker
+      - id: mixed-line-ending
+        args: [--fix=lf]
+      - id: name-tests-test
+        args: [--pytest-test-first]
+      - id: trailing-whitespace
+        args: [--markdown-linebreak-ext=md]
+
+  # ==================== Ruff - Ultra-fast Python linter ====================
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.1.8
+    hooks:
+      # Run the linter
+      - id: ruff
+        args: [--fix, --exit-non-zero-on-fix]
+        types_or: [python, pyi]
+
+      # Run the formatter
+      - id: ruff-format
+        types_or: [python, pyi]
+
+  # ==================== Black - Code formatter ====================
+  - repo: https://github.com/psf/black
+    rev: 23.12.1
+    hooks:
+      - id: black
+        language_version: python3.10
+        args: [--line-length=100]
+
+      - id: black-jupyter
+        language_version: python3.10
+        args: [--line-length=100]
+
+  # ==================== MyPy - Type checking ====================
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.7.1
+    hooks:
+      - id: mypy
+        args: [--strict, --ignore-missing-imports]
+        additional_dependencies:
+          - numpy>=1.26.0
+          - types-requests
+          - types-pillow
+        files: ^python/
+        exclude: ^tests/
+
+  # ==================== Additional Python tools ====================
+
+  # pyupgrade - Automatically upgrade syntax for newer versions
+  - repo: https://github.com/asottile/pyupgrade
+    rev: v3.15.0
+    hooks:
+      - id: pyupgrade
+        args: [--py310-plus]
+
+  # autoflake - Remove unused imports and variables
+  - repo: https://github.com/PyCQA/autoflake
+    rev: v2.2.1
+    hooks:
+      - id: autoflake
+        args:
+          - --in-place
+          - --remove-all-unused-imports
+          - --remove-unused-variables
+          - --remove-duplicate-keys
+          - --ignore-init-module-imports
+
+  # bandit - Security linter
+  - repo: https://github.com/PyCQA/bandit
+    rev: 1.7.5
+    hooks:
+      - id: bandit
+        args: [-c, pyproject.toml]
+        additional_dependencies: [bandit[toml]]
+        exclude: ^tests/
+
+  # ==================== Documentation ====================
+
+  # pydocstyle - Docstring style checker
+  - repo: https://github.com/PyCQA/pydocstyle
+    rev: 6.3.0
+    hooks:
+      - id: pydocstyle
+        args: [--convention=google]
+        additional_dependencies: [tomli]
+        exclude: ^tests/
+
+  # interrogate - Check docstring coverage
+  - repo: https://github.com/econchick/interrogate
+    rev: 1.5.0
+    hooks:
+      - id: interrogate
+        args: [--verbose, --fail-under=80, --ignore-init-module]
+        exclude: ^tests/
+
+  # ==================== Markdown & Docs ====================
+
+  - repo: https://github.com/pre-commit/pygrep-hooks
+    rev: v1.10.0
+    hooks:
+      - id: python-check-blanket-noqa
+      - id: python-check-blanket-type-ignore
+      - id: python-no-eval
+      - id: python-no-log-warn
+      - id: python-use-type-annotations
+      - id: rst-backticks
+      - id: rst-directive-colons
+      - id: rst-inline-touching-normal
+      - id: text-unicode-replacement-char
+
+  # markdownlint - Markdown linter
+  - repo: https://github.com/igorshubovych/markdownlint-cli
+    rev: v0.38.0
+    hooks:
+      - id: markdownlint
+        args: [--fix]
+
+  # ==================== Commit message ====================
+
+  - repo: https://github.com/commitizen-tools/commitizen
+    rev: v3.13.0
+    hooks:
+      - id: commitizen
+        stages: [commit-msg]
+
+  # ==================== JSON/YAML/TOML formatting ====================
+
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: v4.0.0-alpha.8
+    hooks:
+      - id: prettier
+        types_or: [json, yaml, markdown]
+        exclude: ^(\.github/|docs/_build/)
+
+  # ==================== Secrets detection ====================
+
+  - repo: https://github.com/Yelp/detect-secrets
+    rev: v1.4.0
+    hooks:
+      - id: detect-secrets
+        args: [--baseline, .secrets.baseline]
+        exclude: package.lock.json
+
+  # ==================== Dockerfile linting ====================
+
+  - repo: https://github.com/hadolint/hadolint
+    rev: v2.12.0
+    hooks:
+      - id: hadolint
+        args: [--ignore, DL3008, --ignore, DL3009, --ignore, DL3015]
+
+  # ==================== Shell script linting ====================
+
+  - repo: https://github.com/shellcheck-py/shellcheck-py
+    rev: v0.9.0.6
+    hooks:
+      - id: shellcheck
+
+  # ==================== Dependency safety checks ====================
+
+  # Note: uv pip-audit is handled in local hooks below for better control
+
+  # ==================== Code complexity ====================
+
+  - repo: https://github.com/PyCQA/flake8
+    rev: 6.1.0
+    hooks:
+      - id: flake8
+        args: [--max-line-length=100, --extend-ignore=E203]
+        additional_dependencies:
+          - flake8-bugbear
+          - flake8-comprehensions
+          - flake8-simplify
+
+  # ==================== Import sorting (backup to ruff) ====================
+
+  - repo: https://github.com/PyCQA/isort
+    rev: 5.13.2
+    hooks:
+      - id: isort
+        args: [--profile, black, --line-length, "100"]
+
+  # ==================== Notebook cleaning ====================
+
+  - repo: https://github.com/kynan/nbstripout
+    rev: 0.6.1
+    hooks:
+      - id: nbstripout
+        args: [--extra-keys, metadata.kernelspec metadata.language_info]
+
+  # ==================== Python dependency sorting ====================
+
+  - repo: https://github.com/asottile/reorder-python-imports
+    rev: v3.12.0
+    hooks:
+      - id: reorder-python-imports
+        args: [--py310-plus, --application-directories=python]
+
+  # ==================== End-of-file and whitespace ====================
+
+  - repo: https://github.com/Lucas-C/pre-commit-hooks
+    rev: v1.5.4
+    hooks:
+      - id: forbid-crlf
+      - id: remove-crlf
+      - id: forbid-tabs
+      - id: remove-tabs
+        args: [--whitespaces-count, '2']
+
+  # ==================== Local hooks ====================
+
+  - repo: local
+    hooks:
+      # Run pytest (with parallel execution if pytest-xdist is available)
+      - id: pytest
+        name: pytest
+        entry: sh -c 'pytest tests/ -v --tb=short $(python3 -c "import sys; sys.exit(0 if __import__(\"importlib.util\").util.find_spec(\"xdist\") else 1)" 2>/dev/null && echo "-n auto" || echo "")'
+        language: system
+        pass_filenames: false
+        always_run: true
+        stages: [push]
+
+      # Coverage check (with parallel execution if pytest-xdist is available)
+      - id: pytest-cov
+        name: pytest-cov
+        entry: sh -c 'pytest --cov=stm32_biometric --cov-fail-under=80 tests/ $(python3 -c "import sys; sys.exit(0 if __import__(\"importlib.util\").util.find_spec(\"xdist\") and __import__(\"importlib.util\").util.find_spec(\"pytest_cov\") else 1)" 2>/dev/null && echo "-n auto" || echo "")'
+        language: system
+        pass_filenames: false
+        always_run: true
+        stages: [push]
+
+      # Security audit with uv (if uv is installed)
+      - id: uv-pip-audit
+        name: uv pip audit
+        entry: sh -c 'command -v uv >/dev/null 2>&1 && uv pip list --format=json | uv pip audit || echo "uv not installed, skipping audit"'
+        language: system
+        pass_filenames: false
+        always_run: true
+        stages: [push]
+
+      # Type checking with mypy (strict)
+      - id: mypy-strict
+        name: mypy (strict)
+        entry: mypy
+        language: system
+        types: [python]
+        require_serial: true
+        args: [--strict, --show-error-codes]
+        files: ^python/
+
+      # Check for print statements
+      - id: check-print-statements
+        name: check for print statements
+        entry: python -c "import sys; any('print(' in line for line in sys.stdin) and sys.exit(1) or sys.exit(0)"
+        language: system
+        files: ^python/.*\.py$
+        exclude: ^python/stm32_biometric/cli\.py$
+
+      # License header check
+      - id: check-license-headers
+        name: check license headers
+        entry: python scripts/check_license.py
+        language: system
+        files: ^python/.*\.py$
+        exclude: ^tests/
