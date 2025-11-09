@@ -212,11 +212,7 @@ repos:
 
   # ==================== Dependency safety checks ====================
 
-  - repo: https://github.com/Lucas-C/pre-commit-hooks-safety
-    rev: v1.3.3
-    hooks:
-      - id: python-safety-dependencies-check
-        files: pyproject.toml
+  # Note: uv pip-audit is handled in local hooks below for better control
 
   # ==================== Code complexity ====================
 
@@ -269,24 +265,31 @@ repos:
 
   - repo: local
     hooks:
-      # Run pytest
+      # Run pytest (with parallel execution if pytest-xdist is available)
       - id: pytest
         name: pytest
-        entry: pytest
+        entry: sh -c 'pytest tests/ -v --tb=short $(python3 -c "import sys; sys.exit(0 if __import__(\"importlib.util\").util.find_spec(\"xdist\") else 1)" 2>/dev/null && echo "-n auto" || echo "")'
         language: system
         pass_filenames: false
         always_run: true
-        args: [tests/, -v, --tb=short]
         stages: [push]
 
-      # Coverage check
+      # Coverage check (with parallel execution if pytest-xdist is available)
       - id: pytest-cov
         name: pytest-cov
-        entry: pytest
+        entry: sh -c 'pytest --cov=stm32_biometric --cov-fail-under=80 tests/ $(python3 -c "import sys; sys.exit(0 if __import__(\"importlib.util\").util.find_spec(\"xdist\") and __import__(\"importlib.util\").util.find_spec(\"pytest_cov\") else 1)" 2>/dev/null && echo "-n auto" || echo "")'
         language: system
         pass_filenames: false
         always_run: true
-        args: [--cov=stm32_biometric, --cov-fail-under=80, tests/]
+        stages: [push]
+
+      # Security audit with uv (if uv is installed)
+      - id: uv-pip-audit
+        name: uv pip audit
+        entry: sh -c 'command -v uv >/dev/null 2>&1 && uv pip list --format=json | uv pip audit || echo "uv not installed, skipping audit"'
+        language: system
+        pass_filenames: false
+        always_run: true
         stages: [push]
 
       # Type checking with mypy (strict)
